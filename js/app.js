@@ -14,3 +14,8 @@ menuIcon.addEventListener("click" , () => {
     x.classList.toggle("active")
     x.classList.toggle("hidden")
 })
+
+
+window.onload = function() {
+    window.scrollTo(0, 0)
+}
