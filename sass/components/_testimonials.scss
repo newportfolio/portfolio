@@ -1,5 +1,4 @@
 .testimonials {
-    background-color: #121212;
     color: #f0f0f0;
     margin: 0;
     padding: 0;
@@ -23,10 +22,10 @@
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
         gap: 32px;
         .testimonial {
-            background-color: #1e1e1e;
+            background-color: #1e1e1ee3;
             border-radius: 10px;
             padding: 24px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.104);
 
             .client-info {
                 display: flex;
