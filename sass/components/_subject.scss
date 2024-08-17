@@ -1,0 +1,38 @@
+section{
+    .container{
+        width: 95%;
+        overflow: hidden;
+        align-items: center;
+        display: flex;
+        gap: 30px;
+        .cont{
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            animation: 20s slider infinite linear;
+            white-space: nowrap;
+            gap: 30px;
+            .subject{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 50px;
+                h1{
+                    font-size: 24px;
+                    color: rgb(200, 160, 255);
+                }
+            }
+
+            @keyframes slider {
+                from{
+                    transform: translateX(0);
+                }
+                to{
+                    transform: translateX(-100%);
+                }
+            }
+        }
+    }
+}

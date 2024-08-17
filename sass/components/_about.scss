@@ -1,0 +1,50 @@
+.about{
+    height: max-content;
+    margin: 20px 0;
+    .container{
+        width: 80%;
+        .about-cont{
+            display: flex;
+            flex-direction: column;
+            color: white;
+            h1{
+                font-size: 34px;
+                color: white;
+                font-weight: 400;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 15px;
+            }
+            .text-cont{
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
+                .text{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    width: 60%;
+                    text-align: start;
+                    .img-2{
+                        transform: rotate(90deg);
+                    }
+                    .img-3{
+                        transform: rotate(180deg);
+                    }
+                    img{
+                        width: 5%;
+                    }
+                    h2{
+                        font-size: 24px;
+                        font-weight: 400;
+                    }
+                    p{
+                        font-size: 18px;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+}

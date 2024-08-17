@@ -1,0 +1,84 @@
+header{
+    .container{
+        .header-content{
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .logo{
+                display: flex;
+                gap: 2px;
+                align-items: center;
+                h1{
+                    font-size: 30px;
+                    color: plum;
+                }
+            }
+            
+            .menu-icon{
+                display: none;
+                position: relative;
+                i{
+                    position: absolute;
+                    top: 20%;
+                    left: 30%;
+                    color: white; font-size: 22px;
+                }
+                .active{
+                    display: block;
+                }
+                .hidden{
+                    display: none;
+                }
+            }
+        }
+        nav{
+            // background-color: antiquewhite;
+            transition: all ease-in-out .8s;
+            position: relative;
+            padding: 12px 50px;
+            border-color: lemonchiffon;
+            border: 3px solid beige;
+
+            $border: 3px;
+            color: #FFF;
+            background: #000;
+            background-clip: padding-box; 
+            border: solid $border transparent; 
+            border-radius: 30px;
+            text-shadow: 0 1px 0 #000;
+            &:before {
+                content: '';
+                position: absolute;
+                top: 0; right: 0; bottom: 0; left: 0;
+                z-index: -1;
+                margin: -$border; 
+                border-radius: inherit; 
+                background: linear-gradient(45deg, rgb(103, 30, 199), rgba(30, 136, 217, 0.782) , rgb(26, 133, 141) ,rgb(207, 13, 161));
+                
+              }
+            ul{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 40px;
+                li{
+                    &:active{
+                        transform: scale(0.95);
+                        transition: all .5s ease-in-out;
+                    }
+                    a{
+                        font-size: 16px;
+                        font-weight: 600;
+                        color: white;
+                        transition: all .5s ease-in-out;
+                        &:hover{
+                            color: #ba44f9;
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,35 @@
+.message{
+    margin: 20px 0;
+    .container{
+        width: 80%;
+        .content{
+            display: flex; 
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+
+            .left{
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                gap: 20px;
+                flex: 1;
+                h1{
+                    font-size: 32px;
+
+                }
+            }
+
+            .right{
+                flex: 1;
+                width: 50%;
+                display: flex;
+                justify-content: end;
+                img{
+                    width: 70%;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+}
